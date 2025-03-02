@@ -9,32 +9,56 @@
   <link
   href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
   rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="box-border">
+<body class="box-border font-['Plus_Jakarta_Sans']">
 
-  <header class=" overflow-hidden lg:h-[77px] lg:w-[1024px]">
+  <header class="overflow-hidden lg:h-[6.25rem] lg:border-b-[0.048rem] lg:border-[#FFF] bg-white">
     
-    <nav class="fixed w-full z-10 lg:flex justify-between items-center lg:border-b-[0.77px] lg:border-[#FFF] lg:m-b-[48.6px]">
+    <nav class="static w-full z-[50] lg:flex justify-between  items-center  lg:mb-[3.038rem]">
         <div class="flex justify-between items-center">
-            <div class="w-[58px] h-[42px] pt-[27px] pl-[24px] lg:w-[55.48px] lg:h-[40.07px] lg:pt-[18.49px] lg:pb-[18.44px] lg:ml-[73.58px]">
-              <img src="Images/Xest Folio.png" alt="logo">
+            <div class="pt-[1.688rem] pl-[1.5rem] md:w-[3.468rem] md:h-[2.504rem] lg:pt-[1.156rem] lg:pb-[1.153rem] lg:ml-[4.599rem]">
+              <img src="Images/Xest Folio.png" alt="logo" class="w-[3.625rem] h-[2.625rem] lg:w-[4.5rem] lg:h-auto" loading="lazy">
             </div>
-            <div class="text-2xl cursor-pointer text-text-dark bg-gradient-to-r from-[#4C34E3] to-[#EE346C] bg-clip-text text-transparent md:hidden mt-[32px] mr-[22px] border-1 border-[#EE346C] rounded-sm inline-flex items-center justify-center" id="menu-line">
+            <div class="text-2xl cursor-pointer bg-gradient-to-r from-[#4C34E3] to-[#EE346C] bg-clip-text text-transparent md:hidden mt-[2rem] mr-[1.375rem] border-1 border-[#EE346C] rounded-sm inline-flex items-center justify-center w-[2rem] h-[2rem]" id="menu-line">
                 <i class="ri-menu-line"></i>
             </div>
         </div>
         
-        <ul id="ul-links" class="absolute top-0 left-0 w-full flex flex-col items-center justify-center gap-8 p-8 transform transition-transform duration-300 -translate-y-full md:static md:w-auto md:p-0 md:flex-row lg:gap-[36px] md:translate-y-0 lg:inline-flex lg:justify-between lg:max-w-[314px] lg:h-[27px] lg:mt-[30px] lg:mb-[20px] lg:mr-[247px] lg:ml-[463px]">
-            <li><a href="#" class="text-text-dark">About</a></li>
-            <li><a href="#" class="text-text-dark ">Service</a></li>
-            <li><a href="#" class="text-text-dark">Blog</a></li>
-            <li><a href="#" class="text-text-dark ">FAQ</a></li>
-            <li class="lg:mr-[32px]">
-              <a href="#" class="px-6 py-2">Contact Me</a>
+        <ul id="ul-links" class="absolute top-0 left-0 w-full flex flex-col items-center justify-center gap-8 p-8 transform transition-transform duration-300 -translate-y-full md:static md:w-auto md:p-0 md:flex-row md:translate-y-0 lg:gap-[36px] lg:flex lg:flex-wrap lg:items-center lg:justify-end lg:h-[1.688rem] lg:mt-[1.875rem] lg:mb-[1.25rem] lg:pr-[4.599rem] text-lg font-medium z-[40] md:z-auto pt-[5rem] bg-white">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281]">
+              <a href="#" class="px-6 py-2 whitespace-nowrap text-white bg-gradient-to-r from-[#5635DD] to-[#E63573] rounded-md  shadow-md hover:bg-black hover:shadow-lg transition-all duration-300  flex items-center justify-center">Contact Me</a>
             </li>
         </ul>
     </nav>
 </header>
+<section class="mt-[2.5rem] flex items-center justify-center flex-col">
+  <div class="relative flex flex-col items-center justify-center ml-[1.5rem] mr-[1.5rem] text-[3.877rem] font-extrabold">
+    <img src="Images/hero.png" alt="colored lady" class="w-[20.438rem] h-[25.125rem]">
+    <h1 class="absolute bottom-20 bg-white md:bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent">MIAMI</h1>
+    <h1 class="tracking-[-3.5%] ml-[3.875rem] mr-[3.875rem]">WALKE<span>R</span></h1>
+  </div>
+  <div class="flex flex-col items-center justify-center">
+    
+    <div class="mr-[2.5rem] ml-[2.5rem] mb-[3.063rem]">
+      <p class="text-center tracking-normal text-base font-normal mt-[1.563rem]">Award Wining product designer based in Georgia. We create user-friendly interfaces for fast-growing startups.</p>
+    </div>
+    <button class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white bg-gradient-to-r from-[#4C34E3] to-[#EE346C] rounded-md  shadow-md hover:bg-black hover:shadow-lg transition-all duration-300  flex items-center justify-center mb-[5.211rem]">
+      Book A Call
+    </button>
+  </div>
+  </section>
+  <section class="mb-[5.187rem] ml-[1.063rem] mr-[1.621rem]">
+    <img src="Images/Group 33528.png" alt="partner">
+  </section>
+  <h3 class="text-sm font-semibold bg-gradient-to-r from-[#E63573] to-[#5635DD] bg-clip-text text-transparent ml-[1.457rem] mb-[0.375rem] leading-[1.4rem] tracking-[15%]">FEATURES</h3>
+  <h2 class="font-['Poppins'] tracking-normal leading-[2.363rem] font-semibold text-3xl ml-[1.5rem] mr-[2rem] mb-[1.563rem] text-[#131313]">Giving Your Business Some Great Ideas</h2>
+  <p>Every designer needs the right tools to do the perfect job. Thankfully, we can do that. I design products that are more than pretty. I make them shippable and usable.</p>
   <script src="script.js"></script>
 </body>
 </html>
