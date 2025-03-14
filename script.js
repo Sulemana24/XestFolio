@@ -1,3 +1,4 @@
+// Toggle navigation menu
 const menuBtn = document.getElementById("menu-line");
 const navLinks = document.getElementById("ul-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -15,3 +16,6 @@ navLinks.addEventListener("click", () => {
     navLinks.classList.remove("translate-y-0");
     menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
+
+// Update footer year automatically
+document.getElementById('footer-year').textContent = new Date().getFullYear();
