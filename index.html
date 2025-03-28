@@ -31,43 +31,58 @@
             <li><a href="#">Service</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">FAQ</a></li>
-            <li class="md:mr-[1.5rem] md:w-[10rem] md:h-[3.281rem] lg:w-[10.75rem] lg:h-[4.188rem] lg:mt-[1rem]">
-              <a href="#" class="px-6 py-2 whitespace-nowrap text-white bg-black rounded-md cursor-pointer shadow-md hover:bg-black hover:shadow-lg transition-all duration-300 flex items-center justify-center hover:bg-gradient-to-r hover:from-[#4D34E3] hover:to-[#E93470]">Contact Me</a>
+            <li class="md:mr-[1.5rem] md:w-[10rem] md:h-[3.281rem] lg:w-[10.75rem] lg:h-[4.188rem] lg:mt-[1rem] relative">
+                <button type="button" 
+                class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white transition-all duration-300 flex items-center justify-center mb-[5.211rem] bg-gradient-to-r from-[#4D34E3] to-[#E93470] cursor-pointer relative overflow-hidden ">Contact Me
+                </button>
+                <button type="button" 
+                class="bottom-33 right-2 px-6 py-2 md:bottom-32 md:right-2 lg:bottom-36 lg:right-2 lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] whitespace-nowrap text-white bg-gradient-to-r from-[#4D34E3] to-[#E93470] transition-all duration-300 flex items-center justify-center mb-[5.211rem] cursor-pointer relative ">
+                <span class="relative z-10">Contact Me</span>
+                <span class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 hover:opacity-100 text-white "></span>
+                </button>
             </li>
         </ul>
     </nav>
 </header>
 
-<section class="mt-[2.5rem] flex items-center justify-center flex-col md:grid md:grid-cols-2 md:gap-8 md:mt-[3.038rem] md:mb-[5.283rem] md:ml-[2.262rem] md:mr-[1rem] bg-red-100">
-  <div class="relative flex flex-col items-center justify-center mx-[1.5rem] text-[3.877rem] font-extrabold order-1 md:order-2 md:w-[26.969rem] md:h-[33.663rem] md:mr-[4.5rem]">
-    <img src="Images/unsplash_Vlbc1ScnRng.png" alt="colored lady" class="w-[20.438rem] h-[25.125rem] md:h-auto">
-    
-    <h1 class="absolute bottom-20 bg-white md:hidden bg-clip-text text-transparent">
-      MIAMI
-    </h1>
-    <h1 class="tracking-[-3.5%] ml-[3.875rem] mr-[3.875rem] md:hidden">
-      WALKE<span>R</span>
-    </h1>
+<section class="mt-[2.5rem] md:mt-[3.038rem] md:mb-[5.283rem] md:flex">
+  <div class="relative flex flex-col items-center justify-center mx-[1.5rem] text-[3.877rem] font-extrabold order-1 md:order-2 md:w-1/2"> 
+      <img src="Images/unsplash_Vlbc1ScnRng.png" alt="colored lady" class="w-[20.438rem] h-[25.125rem] md:h-[33.663rem] md:w-[26.969rem] lg:w-[35rem] lg:h-[43.688rem]">
+      
+      <h1 class="absolute bottom-20 bg-white bg-clip-text text-transparent md:hidden">
+          MIAMI
+      </h1>
+      <h1 class="tracking-[-3.5%] ml-[3.875rem] mr-[3.875rem] md:hidden">
+          WALKE<span>R</span>
+      </h1>
   </div>
 
-  <div class="flex flex-col items-center justify-center order-2 md:order-1 text-center">
-    
-    <h1 class="hidden md:block md:bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent md:font-extrabold md:text-[8.125rem] md:leading-[150%] md:tracking-normal md:ml-[4.599rem] md:mr-[2.433rem] md:mb-[0.337rem]">
-      MIAMI
-    </h1>
-    <h1 class="hidden md:block tracking-[-3.5%] md:ml-[4.262rem] md:text-[8.125rem] md:font-extrabold md:mb-[0.337rem] leading-[150%]">
-      WALKE<span class="">R</span>
-    </h1>
+  <div class="flex flex-col items-start justify-center order-2 md:order-1 text-center md:w-1/2 md:ml-[2.5rem] md:mt-[11rem]"> 
+      
+      <h1 class="hidden md:block md:bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent md:font-extrabold md:text-[7.625rem] md:leading-[150%] md:tracking-normal md:mr-[2.433rem] md:mb-0 md:leading-none lg:text-[9rem] xl:text-[11.5rem]">
+          MIAMI
+      </h1>
+      <h1 class="hidden md:block tracking-[-3.5%] md:text-[7.25rem] md:font-extrabold md:mb-0 leading-[150%] md:leading-none md:z-2 lg:text-[9.3rem] xl:text-[11.5rem]">
+          WALKE<span class="text-white">R</span>
+      </h1>
 
-    <div class="mx-[2.5rem] mb-[3.063rem]">
-      <p class="tracking-normal text-base font-normal mt-[1.563rem]">
-        Award-winning product designer based in Georgia. We create user-friendly interfaces for fast-growing startups.
-      </p>
+      <div class="flex flex-col items-center md:items-start">
+          <p class="tracking-normal text-base font-normal mt-[1.563rem] mb-[3.063rem] md:text-start">
+              Award-winning product designer based in Georgia. We create user-friendly interfaces for fast-growing startups.
+          </p>
+    <div class="relative">
+    <button type="button" 
+    class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white transition-all duration-300 flex items-center justify-center mb-[5.211rem] bg-gradient-to-r from-[#4D34E3] to-[#E93470] cursor-pointer relative overflow-hidden ">Book A Call
+    </button>
+    <button type="button" 
+    class="bottom-32 right-2 md:bottom-32 md:right-2 lg:bottom-35 lg:right-2 lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white bg-gradient-to-r from-[#4D34E3] to-[#E93470] transition-all duration-300 flex items-center justify-center mb-[5.211rem] cursor-pointer relative ">
+    <span class="relative z-10">Book A Call</span>
+    <span class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 hover:opacity-100 text-white"></span>
+    </button>
     </div>
 
-    <button type="button" class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white bg-black rounded-md transition-all duration-300 flex items-center justify-center mb-[5.211rem] hover:bg-gradient-to-r hover:from-[#4D34E3] hover:to-[#E93470] cursor-pointer">
-      Book A Call
-    </button>
+    </div>
+  
   </div>
 </section>
 
@@ -85,13 +100,20 @@
     </section>
     
 <section class="md:flex md:ml-[2.599rem] lg:mr-[3.438rem]">
-  <div class="md:mr-[0.5rem] md:mb-[12.079rem]">
-    <h3 class="text-sm font-semibold bg-gradient-to-r from-[#E63573] to-[#5635DD] bg-clip-text text-transparent ml-[1.5rem] mb-[0.375rem] leading-[1.4rem] tracking-[15%]">FEATURES</h3>
+  <div class="md:mr-[0.5rem] md:pb-[12.079rem]">
+    <h3 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent ml-[1.5rem] mb-[0.375rem] leading-[1.4rem] tracking-[15%]">FEATURES</h3>
     <h2 class="font-['Poppins'] tracking-normal leading-[2.363rem] font-semibold text-[1.75rem] ml-[1.5rem] mr-[0.5rem] mb-[1.563rem] text-[#131313] md:mb-[1.448rem] md:text-[2rem] md:leading-[135%]">Giving Your Business Some Great Ideas</h2>
     <p class="ml-[1.5rem] mr-[1rem] mb-[2.071rem] text-[#AAAAAA] font-medium text-xs tracking-normal leading-[140%]">Every designer needs the right tools to do the perfect job.Thankfully, we can do that. I design products that are more than pretty. I make them shippable and usable.</p>
-    <button type="button" class="mx-auto lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white bg-black rounded-md  shadow-md  hover:shadow-lg transition-all duration-300 flex items-center justify-center mb-[5.211rem] ml-[1.746rem] mx-auto hover:bg-gradient-to-r hover:from-[#4D34E3] hover:to-[#E93470] cursor-pointer">
-      Contact Us
-    </button>
+    <div class="relative ml-[1.746rem]">
+      <button type="button" 
+      class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white transition-all duration-300 flex items-center justify-center mb-[5.211rem] bg-gradient-to-r from-[#4D34E3] to-[#E93470] cursor-pointer relative overflow-hidden ">Contact Us
+      </button>
+      <button type="button" 
+      class="bottom-32 right-2 md:bottom-32 md:right-2 lg:bottom-35 lg:right-2 lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white bg-gradient-to-r from-[#4D34E3] to-[#E93470] transition-all duration-300 flex items-center justify-center mb-[5.211rem] cursor-pointer relative ">
+      <span class="relative z-10">Contact Us</span>
+      <span class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 hover:opacity-100 text-white "></span>
+      </button>
+      </div>
   </div>
   <div class="ml-[1.563rem] mr-[1.438rem] mb-[5.086rem] w-[20.438rem]  md:grid md:grid-cols-2 md:gap-4 md:w-[81.25rem] md:h-[23.063rem] md:mr-[1rem]"> 
   <div>
@@ -123,7 +145,7 @@
         <p class="font-normal text-[#AAAAAA] text-base tracking-normal leading-[140%]">I design products that are more than pretty. I make them usable.</p>
       </div>
   </div>
-  <div class="hidden md:block">
+  <div class="hidden md:block lg:mb-[3rem]">
     <img src="Images/image (1).png" alt="product design">
     <div>
       <h1 class="font-['Poppins'] tracking-normal leading-[140%] font-semibold text-2xl mb-[0.269rem] text-[#131313]">Product Design</h1>
@@ -135,22 +157,28 @@
 
 <div class="hidden md:grid md:grid-cols-4  md:font-['Poppins'] md:font-semibold md:text-[3.371rem] md:tracking-normal md:leading-[140%] md:ml-[0.5rem] md:mr-[0.5rem] md:mb-[11.266rem] text-center">
   <div>
-    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent border-image border-image-source bg-gradient-to-r from-[#5735DC] to-[#E53574] border-image-slice-1">
-      12K+
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="12K">0</span>+
     </h2>
     
-    <p class="text-xs">Project Complete</p>
+    <p class="text-xs">Project Completed</p>
   </div>
   <div  class="md:flex md:flex-col md:items-center md:justify-center">
-    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent border-image border-image-source bg-gradient-to-r from-[#5735DC] to-[#E53574] border-image-slice-1">7K+</h2>
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="7K">0</span>+
+    </h2>
     <p class="font-['Plus_Jakarta_Sans'] text-xs">Happy Client</p>
   </div>
   <div>
-    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent border-image border-image-source bg-gradient-to-r from-[#5735DC] to-[#E53574] border-image-slice-1">10+</h2>
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="10">0</span>+
+    </h2>
     <p class="font-['Plus_Jakarta_Sans'] text-xs">Years Experience</p>
   </div>
   <div>
-    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent border-image border-image-source bg-gradient-to-r from-[#5735DC] to-[#E53574] border-image-slice-1">270+</h2>
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="270">0</span>+
+    </h2>
     <p class="font-['Plus_Jakarta_Sans'] text-xs">Win Awards</p>
   </div>
 </div>
@@ -162,9 +190,16 @@
     <h2 class="font-['Poppins'] tracking-normal leading-[2.363rem] md:leading-[135%] font-semibold text-3xl mr-[4.688rem] md:text-[2rem] ml-[2rem] ">Some Of Our Best Works</h2>
   </div>
   <div class="ml-[1.563rem] mt-[2.938rem] md:mt-[1rem] md:pr-[2.5rem]">
-    <button type="button" class="md:w-[8rem] md:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white rounded-md shadow-md bg-black hover:shadow-lg transition-all duration-300 flex items-center justify-center mb-[3.586rem] hover:bg-gradient-to-r hover:from-[#4D34E3] hover:to-[#E93470] cursor-pointer">
-    Load More
-    </button>
+    <div class="relative">
+      <button type="button" 
+      class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white transition-all duration-300 flex items-center justify-center mb-[5.211rem] bg-gradient-to-r from-[#4D34E3] to-[#E93470] cursor-pointer relative overflow-hidden ">Load More
+      </button>
+      <button type="button" 
+      class="bottom-32 right-2 md:bottom-32 md:right-2 lg:bottom-35 lg:right-2 lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white bg-gradient-to-r from-[#4D34E3] to-[#E93470] transition-all duration-300 flex items-center justify-center mb-[5.211rem] cursor-pointer relative ">
+      <span class="relative z-10">Load More</span>
+      <span class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 hover:opacity-100 text-white"></span>
+      </button>
+      </div>
   </div>
 </div>
 <div class="ml-[1.5rem] mr-[0.375rem] flex flex-col gap-4 items-center md:flex-row md:mb-[4rem]  lg:mb-[1.375rem]">
@@ -221,15 +256,22 @@
 
 </section>
 <section class="text-white bg-[#181818] pb-[4.688rem] pt-[3.375rem] mb-[3.393rem] md:pb-[2.5rem]">
-  <div class="md:flex md:justify-between md:mb-[2.529rem]lg:mb-0">
+  <div class="mb-[1rem] md:flex md:justify-between md:mb-[2.529rem]lg:mb-0">
     <div class="ml-[1.471rem]">
       <h4 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent   mb-[0.75rem]  leading-[1.4rem] tracking-[15%]">LATEST BLOG</h4>
       <h2 class="font-['Poppins'] font-semibold text-[1.75rem] mb-[5rem] mr-[2.438rem] tracking-normal leading-[2.363rem] ">Check Some Latest News & Articles</h2>
     </div>
-    <div class="pl-[1.746rem] pr-[14.545rem] md:mt-[1rem] md:pr-[4.5rem]">
-      <button type="button" class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-black bg-white rounded-md shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center mb-[3.586rem] hover:bg-gradient-to-r hover:from-[#4D34E3] hover:to-[#E93470] hover:text-white cursor-pointer">
-        Load More
+    <div class="ml-[1.563rem] mt-[2.938rem] md:mt-[1rem] md:pr-[2.5rem]">
+      <div class="relative">
+        <button type="button" 
+        class="lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap text-white transition-all duration-300 flex items-center justify-center mb-[5.211rem] bg-gradient-to-r from-[#4D34E3] to-[#E93470] cursor-pointer relative overflow-hidden ">Load More
         </button>
+        <button type="button" 
+        class="bottom-32 right-2 md:bottom-32 md:right-2 lg:bottom-35 lg:right-2 lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] px-6 py-2 whitespace-nowrap bg-gradient-to-r from-[#4D34E3] to-[#E93470] transition-all duration-300 flex items-center justify-center mb-[5.211rem] cursor-pointer relative hover:text-black">
+        <span class="relative z-10">Load More</span>
+        <span class="absolute inset-0 bg-white opacity-0 transition-opacity duration-300 hover:opacity-100 "></span>
+        </button>
+        </div>
     </div>
   </div>
   <div class="pb-[3.393rem] md:flex md:justify-between">
@@ -261,7 +303,7 @@
       </div>
     </div> 
   </div>
-  <div class="hidden md:hidden lg:flex">
+  <div class="hidden md:hidden lg:flex lg:mx-[5rem]">
     <div class="ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem]">
       <img src="Images/immj.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
       <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
@@ -271,7 +313,7 @@
         <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
       </div>
     </div>
-    <div class="hidden ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem] md:hidden lg:block">
+    <div class="hidden relative mb-[8.644rem] md:hidden lg:block">
       <img src="Images/img2.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
       <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
         <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
@@ -281,7 +323,7 @@
       </div>
     </div>
   </div>
-  <div class="hidden md:hidden lg:flex">
+  <div class="hidden md:hidden lg:flex lg:mx-[5rem]">
     <div class="ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem] ">
       <img src="Images/immj.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
       <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
@@ -301,7 +343,7 @@
       </div>
     </div>
   </div>
-  <div class="hidden md:hidden lg:flex">
+  <div class="hidden md:hidden lg:flex lg:mx-[5rem]">
     <div class="hidden ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem]  md:hidden lg:block">
       <img src="Images/immj.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
       <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
@@ -338,10 +380,10 @@
 
   <div class="md:flex md:justify-between md:mt-[4.318rem]">
     
-    <div class="pt-[1.434rem] pl-[1.313rem] pr-[1.063rem] pb-[1.5rem] md:flex md:flex-col md:items-start md:pr-[1rem]">
+    <div class="pt-[1.434rem] pl-[1.313rem] pr-[1.063rem] pb-[1.5rem]">
       <img src="Images/Icon.png" alt="icon">
       <p class="font-poppins font-normal tracking-normal leading-[180%] text-base text-[#090D23] mt-[1.422rem] mb-[1.438rem]">
-        “Now, I can track my business <br> activity more easily and have a better understanding of how to operate the products.”
+        “Now, I can track my business activity more easily and have a better understanding of how to operate the products.”
       </p>
       <div class="flex items-center justify-between mr-[2.327rem] mb-[1.438rem] md:mr-[1rem]">
         <div class="font-poppins flex items-center">
@@ -372,7 +414,7 @@
       </div>
     </div>
 
-    <div class="pt-[1.434rem] pl-[1.313rem] pr-[1.063rem] pb-[1.5rem]">
+    <div class="pt-[1.434rem] pl-[1.313rem] pr-[1.063rem] pb-[1.5rem] md:pr-[0.5rem]">
       <img src="Images/Icon.png" alt="Icon">
       <p class="font-poppins font-normal tracking-normal leading-[180%] text-base text-[#090D23] mt-[1.422rem] mb-[1.438rem]">
         “The best platform I’ve used so far for managing my business!”
@@ -392,7 +434,7 @@
 </section>
 
                       <!-- FAQS Section-->
-<section class="text-white bg-[#181818] pt-[3.063rem] pb-[4.123rem] mb-[5.625rem] w-full md:flex">
+<section class="text-white bg-[#181818] pt-[3.063rem] pb-[4.123rem] mb-[5.625rem] w-full md:flex md:justify-between md:pr-[2rem]">
   <div class="ml-[1.5rem] order-1 md:order-2">
     <h4 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent mr-[15.779rem] mb-[0.118rem] leading-[160%] tracking-[15%]">FAQs</h4>
     <h1 class="font-['Poppins'] text-[1.75rem] leading-[135%] tracking-normal text-white mb-[1.607rem]">Be Kind to Your Mind Question & Answer</h1>
@@ -400,26 +442,26 @@
   </div>
   <div class="mr-[0.5rem] order-2 md:order-1">
     <div>
-      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem] md:w-[20.451rem] md:h-[3.371rem]">
-        <h1 class="font-semibold text-xs tracking-normal leading-[144%]">How can we help your business?</h1>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem]  md:w-[20.451rem] md:h-[3.371rem] lg:w-[40rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">How can we help your business?</h1>
         <i class="ri-arrow-down-s-line"></i>
       </div>
     </div>
     <div>
-      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem]">
-        <h1 class="font-semibold text-xs tracking-normal leading-[144%]">What are the advantages of Bisnext</h1>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">What are the advantages of Bisnext</h1>
         <i class="ri-arrow-down-s-line"></i>
       </div>
     </div>
     <div>
-      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem]">
-        <h1 class="font-semibold text-xs tracking-normal leading-[144%]">Let’s find an office near you?</h1>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">Let’s find an office near you?</h1>
         <i class="ri-arrow-down-s-line"></i>
       </div>
     </div>
     <div>
-      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem]">
-        <h1 class="font-semibold text-xs tracking-normal leading-[144%]">How IT consultancy experts work?</h1>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">How IT consultancy experts work?</h1>
         <i class="ri-arrow-down-s-line"></i>
       </div>
     </div>
