@@ -1,4 +1,4 @@
-// Toggle navigation menu
+
 const menuBtn = document.getElementById("menu-line");
 const navLinks = document.getElementById("ul-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     });
     });
 
-// Update footer year automatically
+// Update footer year
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 
 
