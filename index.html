@@ -3,15 +3,547 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./Images/Xest Folio.png" type="image/x-icon">
+  <link rel="icon" href="Images/Xest Folio.png" type="image/x-icon">
   <title>Xest Folio</title>
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-  rel="stylesheet"/>
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="box-border">
+<body class="box-border font-['Plus_Jakarta_Sans']">
 
+  <header class="overflow-hidden md:max-w-[64rem] md:h-[4.813rem] md:border-b-[0.048rem] md:border-[#FFF] md:ml-[2.599rem] lg:max-w-[90rem] lg:h-[6.25rem] lg:mr-[3.438rem]">
+    
+    <nav class="static w-full md:flex md:justify-between md:items-center md:mb-[3.038rem] md:py-[1.875rem]  lg:py-[0.563rem] bg-white">
+        <div class="flex justify-between items-center"> 
+            <div class="z-[50] pt-[1.688rem] pl-[1.5rem] md:p-0 md:w-[3.468rem] md:h-[2.504rem]">
+              <img src="Images/Xest Folio.png" alt="logo" class="w-[3.625rem] h-[2.625rem] lg:w-[4.5rem] lg:h-auto" loading="lazy">
+            </div>
+            <div class="text-2xl cursor-pointer bg-gradient-to-r from-[#4C34E3] to-[#EE346C] bg-clip-text text-transparent md:hidden mt-[2rem] mr-[1.375rem] border-1 border-[#EE346C] rounded-sm inline-flex items-center justify-center w-[2rem] h-[2rem] z-[50]" id="menu-line">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        
+        <ul id="ul-links" class="absolute top-0 left-0 w-full flex flex-col items-center justify-center gap-8 p-8 transform transition-transform duration-300 -translate-y-full md:static md:w-auto md:p-0 md:flex-row md:translate-y-0 lg:gap-[36px] lg:flex lg:items-center lg:justify-end md:h-[1.688rem] lg:mt-[1.875rem] md:mb-[1.25rem] lg:pr-[1.599rem] text-lg font-medium z-[40] pt-[5rem] bg-white">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="md:mr-[1.5rem] md:w-[10rem] md:h-[3.281rem] lg:w-[10.75rem] lg:h-[4.188rem] lg:mt-[1rem] relative flex items-center justify-center">
+                <button type="button" class="
+                  relative z-10 inline-flex items-center justify-center
+                  whitespace-nowrap overflow-hidden cursor-pointer
+                  text-white font-semibold rounded-lg
+                  px-6 py-2 lg:w-[8rem] lg:h-[3.281rem]
+                  bg-gradient-to-r from-[#4D34E3] to-[#E93470]
+                  transition-all duration-300 ease-in-out
+                  before:content-[''] before:absolute before:inset-0
+                  before:bg-black before:rounded-lg before:-z-10
+                  before:transition-transform before:duration-300 before:ease-in-out
+                  after:content-[''] after:absolute after:inset-0
+                  after:bg-[#E93470] after:rounded-lg after:-z-20
+                  after:transition-transform after:duration-300 after:ease-in-out
+                  hover:-translate-y-0.5 hover:shadow-xl
+                  hover:before:-translate-y-2 
+                  hover:after:-translate-y-3">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="mt-[2.5rem] md:mt-[3.038rem] md:mb-[5.283rem] md:flex">
+  <div class="relative flex flex-col items-center justify-center mx-[1.5rem] text-[3.877rem] font-extrabold order-1 md:order-2 md:w-1/2"> 
+      <img src="Images/unsplash_Vlbc1ScnRng.png" alt="colored lady" class="w-[20.438rem] h-[25.125rem] md:h-[33.663rem] md:w-[26.969rem] lg:w-[35rem] lg:h-[43.688rem]">
+      
+      <h1 class="absolute bottom-20 bg-white bg-clip-text text-transparent md:hidden">
+          MIAMI
+      </h1>
+      <h1 class="tracking-[-3.5%] ml-[3.875rem] mr-[3.875rem] md:hidden">
+          WALKE<span>R</span>
+      </h1>
+  </div>
+
+  <div class="flex flex-col items-start justify-center order-2 md:order-1 text-center md:w-1/2 md:ml-[2.5rem] md:mt-[11rem]"> 
+      
+      <h1 class="hidden md:block md:bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent md:font-extrabold md:text-[7.625rem] md:leading-[150%] md:tracking-normal md:mr-[2.433rem] md:mb-0 md:leading-none lg:text-[9rem] xl:text-[11.5rem]">
+          MIAMI
+      </h1>
+      <h1 class="hidden md:block tracking-[-3.5%] md:text-[7.25rem] md:font-extrabold md:mb-0 leading-[150%] md:leading-none md:z-2 lg:text-[9.3rem] xl:text-[11.5rem]">
+          WALKE<span class="text-white">R</span>
+      </h1>
+
+      <div class="flex flex-col items-center md:items-start">
+          <p class="tracking-normal text-base font-normal mt-[1.563rem] mb-[3.063rem] md:text-start mx-[1rem]">
+              Award-winning product designer based in Georgia. We create user-friendly interfaces for fast-growing startups.
+          </p>
+    <div class="flex items-center justify-center p-10"> <div class="relative">
+      <button type="button" class="
+        relative z-10 inline-flex items-center justify-center
+        whitespace-nowrap overflow-hidden cursor-pointer
+        text-white font-semibold rounded-lg
+        px-6 py-1 lg:w-[8rem] lg:h-[3.281rem]
+        bg-gradient-to-r from-[#4D34E3] to-[#E93470]
+        transition-all duration-300 ease-in-out
+        before:content-[''] before:absolute before:inset-0
+        before:bg-black before:rounded-lg before:-z-10
+        before:transition-transform before:duration-300 before:ease-in-out
+        after:content-[''] after:absolute after:inset-0
+        after:bg-[#E93470] after:rounded-lg after:-z-20
+        after:transition-transform after:duration-300 after:ease-in-out
+        hover:-translate-y-0.5 hover:shadow-xl
+        hover:before:-translate-y-2 
+        hover:after:-translate-y-3">
+        Book A Call
+      </button>
+    </div>
+  </div>
+  </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+  <section class="mt-[2rem] mb-[5.187rem] ml-[1.063rem] mr-[rem] md:mb-[6.646rem]">
+    <div class="mb-[1.688rem]">
+      <h3 class="font-inter font-medium leading-[1.156rem] tracking-[0.048rem] text-center text-sm text-[#12141DCC]">Trusted by</h3>
+    </div>
+      <div class="grid grid-cols-3 mb-[5.187rem] items-center justify-center md:grid-cols-5 md:w-full">
+        <img src="Images/Logo 05.png" alt="paperz" class="hidden md:block md:ml-[1.936rem]">
+        <img src="Images/Logo 04.png" alt="dorfus">
+        <img src="Images/Logo.png" alt="martino">
+        <img src="Images/Logo 02.png" alt="square">
+        <img src="Images/Logo 03.png" alt="gobona" class="hidden md:block md:mr-[1rem]">
+      </div>
+    </section>
+    
+<section class="md:flex md:ml-[2.599rem] lg:mr-[3.438rem]">
+  <div class="md:mr-[0.5rem] md:pb-[12.079rem]">
+    <h3 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent ml-[1.5rem] mb-[0.375rem] leading-[1.4rem] tracking-[15%]">FEATURES</h3>
+    <h2 class="font-['Poppins'] tracking-normal leading-[2.363rem] font-semibold text-[1.75rem] ml-[1.5rem] mr-[0.5rem] mb-[1.563rem] text-[#131313] md:mb-[1.448rem] md:text-[2rem] md:leading-[135%]">Giving Your Business Some Great Ideas</h2>
+    <p class="ml-[1.5rem] mr-[1rem] mb-[2.071rem] text-[#AAAAAA] font-medium text-xs tracking-normal leading-[140%]">Every designer needs the right tools to do the perfect job.Thankfully, we can do that. I design products that are more than pretty. I make them shippable and usable.</p>
+    <div class="relative ml-[1.746rem]">
+        <button type="button" class="mb-[3rem] lg:ml-[2rem] lg:w-[8rem] lg:h-[3.281rem] relative z-10 inline-flex items-center justify-center
+          whitespace-nowrap overflow-hidden cursor-pointer
+          text-white font-semibold rounded-lg
+          px-6 py-2 lg:w-[8rem] lg:h-[3.281rem]
+          bg-gradient-to-r from-[#4D34E3] to-[#E93470]
+          transition-all duration-300 ease-in-out
+          before:content-[''] before:absolute before:inset-0
+          before:bg-black before:rounded-lg before:-z-10
+          before:transition-transform before:duration-300 before:ease-in-out
+          after:content-[''] after:absolute after:inset-0
+          after:bg-[#E93470] after:rounded-lg after:-z-20
+          after:transition-transform after:duration-300 after:ease-in-out
+          hover:-translate-y-0.5 hover:shadow-xl
+          hover:before:-translate-y-2 
+          hover:after:-translate-y-3">
+          Contact Us
+        </button>
+      </div>
+    </div>
+      </div>
+  </div>
+  <div class="ml-[1.563rem] mr-[1.438rem] mb-[5.086rem] w-[20.438rem]  md:grid md:grid-cols-2 md:gap-4 md:w-[81.25rem] md:h-[23.063rem] md:mr-[1rem]"> 
+  <div>
+    <div class="md:mt-[2.889rem]">
+      <img src="Images/image (3).png" alt="UX Design">
+      <div class="mt-[0.528rem] mb-[1.864rem]">
+        <h1 class="font-['Poppins'] tracking-normal leading-[140%] font-semibold text-2xl mb-[0.269rem] text-[#131313]">UX Experience</h1>
+        <p class="font-normal text-[#AAAAAA] text-base tracking-normal leading-[140%]">I design products that are more than pretty. I make them usable.</p>
+      </div>
+    </div>
+    <div>
+      <img src="Images/image (2).png" alt="product analysis">
+      <div class="mt-[0.528rem] mb-[1.864rem]">
+        <h1 class="font-['Poppins'] tracking-normal leading-[140%] font-semibold text-2xl mb-[0.269rem] text-[#131313]">Product Analysis</h1>
+        <p class="font-normal text-[#AAAAAA] text-base tracking-normal leading-[140%]">I design products that are more than pretty. I make them usable.</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img src="Images/img.png" alt="UI Design">
+    <div class="mt-[0.528rem] mb-[1.864rem]">
+      <h1 class="font-['Poppins'] tracking-normal leading-[140%] font-semibold text-2xl mb-[0.269rem] text-[#131313]">UI Design</h1>
+      <p class="font-normal text-[#AAAAAA] text-base tracking-normal leading-[140%]">I design products that are more than pretty. I make them usable.</p>
+    </div>
+    <div class="md:hidden">
+      <img src="Images/image (1).png" alt="product design">
+      <div class="mt-[0.528rem] mb-[1.864rem]">
+        <h1 class="font-['Poppins'] tracking-normal leading-[140%] font-semibold text-2xl mb-[0.269rem] text-[#131313]">Product Design</h1>
+        <p class="font-normal text-[#AAAAAA] text-base tracking-normal leading-[140%]">I design products that are more than pretty. I make them usable.</p>
+      </div>
+  </div>
+  <div class="hidden md:block lg:mb-[3rem]">
+    <img src="Images/image (1).png" alt="product design">
+    <div>
+      <h1 class="font-['Poppins'] tracking-normal leading-[140%] font-semibold text-2xl mb-[0.269rem] text-[#131313]">Product Design</h1>
+      <p class="font-normal text-[#AAAAAA] text-base tracking-normal leading-[140%]">I design products that are more than pretty. I make them usable.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="hidden md:grid md:grid-cols-4 md:mt-[13rem]  md:font-['Poppins'] md:font-semibold md:text-[3.371rem] md:tracking-normal md:leading-[140%] md:ml-[0.5rem] md:mr-[0.5rem] md:mb-[11.266rem] text-center">
+  <div>
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="12K">0</span>+
+    </h2>
+    
+    <p class="text-xs">Project Completed</p>
+  </div>
+  <div  class="md:flex md:flex-col md:items-center md:justify-center">
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="7K">0</span>+
+    </h2>
+    <p class="font-['Plus_Jakarta_Sans'] text-xs">Happy Client</p>
+  </div>
+  <div>
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="10">0</span>+
+    </h2>
+    <p class="font-['Plus_Jakarta_Sans'] text-xs">Years Experience</p>
+  </div>
+  <div>
+    <h2 class="md:mb-[0.599rem] text-transparent bg-clip-text bg-gradient-to-r from-[#E63573] to-[#5635DD] border-[0.77px] border-transparent relative inline-block before:bg-gradient-to-r before:from-[#5735DC] before:to-[#E53574] before:-z-10">
+      <span class="counter" data-target="270">0</span>+
+    </h2>
+    <p class="font-['Plus_Jakarta_Sans'] text-xs">Win Awards</p>
+  </div>
+</div>
+
+<section class="md:ml-[2.599rem] lg:mx-[3.375rem]">
+  <div class="mb-[1.586rem] md:flex md:justify-between md:mb-[2.529rem]">
+  <div>
+    <h3 class="text-sm font-semibold bg-gradient-to-r from-[#E63573] to-[#5635DD] bg-clip-text text-transparent mr-[15.779rem] mb-[0.5rem] leading-[1.4rem] tracking-widest ml-[2rem] ">PORTFOLIO</h3>
+    <h2 class="font-['Poppins'] tracking-normal leading-[2.363rem] md:leading-[135%] font-semibold text-3xl mr-[4.688rem] md:text-[2rem] ml-[2rem] ">Some Of Our Best Works</h2>
+  </div>
+  <div class="ml-[1.563rem] mt-[2.938rem] md:mt-[1rem] md:pr-[2.5rem]">
+    <div class="relative">
+      
+        <button type="button" class="mb-[3rem]
+          relative z-10 inline-flex items-center justify-center
+          whitespace-nowrap overflow-hidden cursor-pointer
+          text-white font-semibold rounded-lg
+          px-6 py-2 lg:w-[8rem] lg:h-[3.281rem]
+          bg-gradient-to-r from-[#4D34E3] to-[#E93470]
+          transition-all duration-300 ease-in-out
+          before:content-[''] before:absolute before:inset-0
+          before:bg-black before:rounded-lg before:-z-10
+          before:transition-transform before:duration-300 before:ease-in-out
+          after:content-[''] after:absolute after:inset-0
+          after:bg-[#E93470] after:rounded-lg after:-z-20
+          after:transition-transform after:duration-300 after:ease-in-out
+          hover:-translate-y-0.5 hover:shadow-xl
+          hover:before:-translate-y-2 
+          hover:after:-translate-y-3">
+          Load More
+        </button>
+      </div>
+    </div>
+      </div>
+  </div>
+</div>
+<div class="ml-[1.5rem] mr-[0.375rem] flex flex-col gap-4 items-center md:flex-row md:mb-[4rem] lg:mb-[1.375rem]">
+  <div class="relative">
+    <img src="Images/Rectangle 38.png" alt="retro laptop" class="w-full lg:w-[28.938rem] lg:h-[18.25rem]">
+    <div class="absolute top-[10.5rem] md:top-[4.9rem] left-[1.25rem] md:left-[1.1rem] lg:top-[14rem]">
+      <h4 class="text-xs font-semibold bg-gradient-to-r from-[#E63573] to-[#5635DD] bg-clip-text text-transparent leading-[1.2rem] tracking-[15%]">
+        UI DESIGN
+      </h4>
+      <h3 class="font-['Poppins'] text-[#FFD9D9] text-2xl font-semibold leading-[2.025rem] tracking-normal">
+        Greenfy Website
+      </h3>
+    </div>
+  </div>
+
+  <div>
+    <img src="Images/Rectangle 39.png" alt="faded laptop" class="w-full lg:w-[22.813rem] lg:h-[18.25rem]">
+  </div>
+
+  <div class="mb-[6.25rem] md:mb-[0]">
+    <img src="Images/Rectangle 40.png" alt="camera with lights" class="w-full lg:w-[16.75rem] lg:h-[18.25rem]">
+  </div>
+  
+</div>
+<div class="hidden ml-[1.5rem] mr-[0.375rem] flex flex-col gap-4 items-center md:flex-row md:mb-[4rem] lg:flex lg:mb-[1.375rem]">
+  <div class="mb-[6.25rem] md:mb-[0]">
+    <img src="Images/Rectangle 40.png" alt="camera with lights" class="w-full lg:w-[16.75rem] lg:h-[18.25rem]">
+  </div>
+  <div>
+    <img src="Images/Rectangle 39.png" alt="faded laptop" class="w-full lg:w-[22.813rem] lg:h-[18.25rem]">
+  </div>
+
+  
+  <div>
+    <img src="Images/Rectangle 38.png" alt="retro laptop" class="w-full lg:w-[28.938rem] lg:h-[18.25rem]">
+  </div>
+  
+</div>
+
+<div class="hidden ml-[1.5rem] mr-[0.375rem] flex flex-col gap-4 items-center md:flex-row md:mb-[4rem] lg:mb-[10.938rem] lg:flex">
+  <div>
+    <img src="Images/Rectangle 38.png" alt="retro laptop" class="w-full lg:w-[28.938rem] lg:h-[18.25rem]">
+  </div>
+
+  <div>
+    <img src="Images/Rectangle 39.png" alt="faded laptop" class="w-full lg:w-[22.813rem] lg:h-[18.25rem]">
+  </div>
+
+  <div class="mb-[6.25rem] md:mb-[0]">
+    <img src="Images/Rectangle 40.png" alt="camera with lights" class="w-full lg:w-[16.75rem] lg:h-[18.25rem]">
+  </div>
+  
+</div>
+
+</section>
+<section class="text-white bg-[#181818] pb-[4.688rem] pt-[3.375rem] mb-[3.393rem] md:pb-[2.5rem]">
+  <div class="mb-[1rem] md:flex md:justify-between md:mb-[2.529rem] lg:mb-0">
+    <div class="ml-[1.471rem]">
+      <h4 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent mb-[0.75rem]  leading-[1.4rem] tracking-[15%]">LATEST BLOG</h4>
+      <h2 class="font-['Poppins'] font-semibold text-[1.75rem] mb-[5rem] mr-[2.438rem] tracking-normal leading-[2.363rem]">Check Some Latest News & Articles</h2>
+    </div>
+    <div class="ml-[1.563rem] mt-[2.938rem] md:mt-[1rem] md:pr-[2.5rem] relative">
+          <button type="button" class="mb-[3rem]
+            relative z-10 inline-flex items-center justify-center
+            whitespace-nowrap overflow-hidden cursor-pointer
+            text-black font-semibold rounded-lg
+            px-6 py-2 lg:w-[8rem] lg:h-[3.281rem]
+            bg-gradient-to-r from-[#4D34E3] to-[#E93470]
+            transition-all duration-300 ease-in-out
+            before:content-[''] before:absolute before:inset-0
+            before:bg-white before:rounded-lg before:-z-10
+            before:transition-transform before:duration-300 before:ease-in-out
+            after:content-[''] after:absolute after:inset-0
+            after:bg-[#E93470] after:rounded-lg after:-z-20
+            after:transition-transform after:duration-300 after:ease-in-out
+            hover:-translate-y-0.5 hover:shadow-xl
+            hover:before:-translate-y-2 
+            hover:after:-translate-y-3">
+            Load More
+          </button>
+        </div>
+  </div>
+  <div class="pb-[3.393rem] md:flex md:justify-between">
+    <div class="ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem] lg:hidden">
+      <img src="Images/image.png" alt="hands on keyboard md:w-[25.669rem] md:h-[17.819rem]">
+      <div class="absolute top-40 left-20 md:top-35 md:left-15">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+    <div class="ml-[1.375rem] mr-[2.914rem] relative md:hidden">
+      <img src="Images/image.png" alt="hands on keyboard">
+      <div class="absolute top-40 left-20 bg-[#181818] ">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+    <div class="hidden md:block ml-[1.375rem] mr-[2.914rem] relative md:mr-[3.176rem] md:mb-[3rem] lg:hidden">
+      <img src="Images/imgg.png" class="mb-[4.644rem] md:w-[25.813rem] md:h-[17.819rem]" alt="manager with designers">
+      <div class="absolute top-40 left-20 bg-[#181818]">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div> 
+  </div>
+  <div class="hidden md:hidden lg:flex lg:mx-[5rem]">
+    <div class="ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem]">
+      <img src="Images/immj.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
+      <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+    <div class="hidden relative mb-[8.644rem] md:hidden lg:block">
+      <img src="Images/img2.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
+      <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="hidden lg:flex lg:mx-[5rem]">
+    <div class="ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem] ">
+      <img src="Images/immj.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
+      <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+    <div class="ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem]">
+      <img src="Images/img2.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
+      <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="hidden md:hidden lg:flex lg:mx-[5rem]">
+    <div class="hidden ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem]  md:hidden lg:block">
+      <img src="Images/immj.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
+      <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+    <div class="hidden ml-[1.475rem] mr-[3.914rem] relative mb-[8.644rem] md:hidden lg:block">
+      <img src="Images/img2.png" alt="hands on keyboard" class="md:w-[25.669rem] md:h-[17.819rem]">
+      <div class="absolute top-40 left-20 md:top-35 md:left-15 lg:top-55 lg:left-20">
+        <h5 class="text-[#888888] font-medium text-[0.467rem] tracking-normal leading-[140%]">UI Design  |   22 May  2023</h5>
+        <h2 class="font-['Poppins'] text-[1.119rem] font-semibold tracking-normal leading-[135%] text-white">What is UI Design in Front End Design?</h2>
+        <p class="text-[0.575rem] font-medium tracking-normal leading-[140%] text-[#AAAAAA]">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+        <a href="#" class="text-[0.575rem] font-bold leading-[140%] tracking-[0.18rem] mb-[3.018rem] text-white cursor-pointer">READ MORE <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="flex flex-col items-center justify-center">
+    <div>
+      <h3 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent mb-[0.375rem] leading-[160%] tracking-[0.15rem]">
+        TESTIMONIAL
+      </h3>
+    </div>
+    <div>
+      <h1 class="font-poppins text-[1.75rem] font-semibold text-[#131313] tracking-normal leading-[135%]">
+        What our customers say
+      </h1>
+    </div>
+  </div>
+
+  <div class="md:flex md:justify-between md:mt-[4.318rem]">
+    
+    <div class="pt-[1.434rem] pl-[1.313rem] pr-[1.063rem] pb-[1.5rem]">
+      <img src="Images/Icon.png" alt="icon">
+      <p class="font-poppins font-normal tracking-normal leading-[180%] text-base text-[#090D23] mt-[1.422rem] mb-[1.438rem]">
+        “Now, I can track my business activity more easily and have a better understanding of how to operate the products.”
+      </p>
+      <div class="flex items-center justify-between mr-[2.327rem] mb-[1.438rem] md:mr-[1rem]">
+        <div class="font-poppins flex items-center">
+          <img src="Images/Ellipse 1.png" alt="customer">
+          <h1 class="text-lg font-medium tracking-normal leading-[130%] text-[#090D23] ml-2">Berry Gunawan</h1>
+        </div>
+        <div class="flex items-center justify-between">
+          <img src="Images/star.png" alt="star-rating">
+          <h3 class="ml-1">3.5</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-[1.434rem] pl-[1.313rem] pr-[1.063rem] pb-[1.5rem]">
+      <img src="Images/Icon.png" alt="icon">
+      <p class="font-poppins font-normal tracking-normal leading-[180%] text-base text-[#090D23] mt-[1.422rem] mb-[1.438rem]">
+        “I love how simple and efficient the tracking system is. It saves me so much time!”
+      </p>
+      <div class="flex items-center justify-between mr-[2.327rem] mb-[1.438rem] md:mr-[1rem]">
+        <div class="font-poppins flex items-center">
+          <img src="Images/Ellipse 1 (1).png" alt="customer">
+          <h1 class="text-lg font-medium tracking-normal leading-[130%] text-[#090D23] ml-2">Jane Cooper</h1>
+        </div>
+        <div class="flex items-center">
+          <img src="Images/star.png" alt="star-rating">
+          <h3 class="ml-1">3.5</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-[1.434rem] pl-[1.313rem] pr-[1.063rem] pb-[1.5rem] md:pr-[0.5rem]">
+      <img src="Images/Icon.png" alt="Icon">
+      <p class="font-poppins font-normal tracking-normal leading-[180%] text-base text-[#090D23] mt-[1.422rem] mb-[1.438rem]">
+        “The best platform I’ve used so far for managing my business!”
+      </p>
+      <div class="flex items-center justify-between mr-[2.327rem] mb-[1.438rem] md:mr-[1rem]">
+        <div class="font-poppins flex items-center">
+          <img src="Images/Ellipse 1 (2).png" alt="customer">
+          <h1 class="text-lg font-medium tracking-normal leading-[130%] text-[#090D23] ml-2">Cobocannaeru</h1>
+        </div>
+        <div class="flex items-center">
+          <img src="Images/star.png" alt="star-rating">
+          <h3 class="ml-1">3.5</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+                      <!-- FAQS Section-->
+<section class="text-white bg-[#181818] pt-[3.063rem] pb-[4.123rem] mb-[5.625rem] w-full md:flex md:justify-between md:pr-[2rem]">
+  <div class="ml-[1.5rem] order-1 md:order-2">
+    <h4 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent mr-[15.779rem] mb-[0.118rem] leading-[160%] tracking-[15%]">FAQs</h4>
+    <h1 class="font-['Poppins'] text-[1.75rem] leading-[135%] tracking-normal text-white mb-[1.607rem]">Be Kind to Your Mind Question & Answer</h1>
+    <p class="text-[#AAAAAA] text-medium text-xs tracking-normal leading-[144%] mr-[0.76rem] mb-[2.26rem]">All Your Questions are in A document, in question and answer <br> format, that introduces newcomers to a topic or answers <br> common questions.</p>
+  </div>
+  <div class="mr-[0.5rem] order-2 md:order-1">
+    <div>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem]  md:w-[20.451rem] md:h-[3.371rem] lg:w-[40rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">How can we help your business?</h1>
+        <i class="ri-arrow-down-s-line"></i>
+      </div>
+    </div>
+    <div>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">What are the advantages of Bisnext</h1>
+        <i class="ri-arrow-down-s-line"></i>
+      </div>
+    </div>
+    <div>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">Let’s find an office near you?</h1>
+        <i class="ri-arrow-down-s-line"></i>
+      </div>
+    </div>
+    <div>
+      <div class="w-auto h-[2.51rem] bg-[#222222] flex items-center justify-between mb-[0.696rem] mx-[1.5rem] text-white pr-[1.148rem] pl-[0.681rem] lg:h-[4.375rem]">
+        <h1 class="font-semibold text-xs tracking-normal leading-[144%] md:text-xl">How IT consultancy experts work?</h1>
+        <i class="ri-arrow-down-s-line"></i>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="flex flex-col items-center justify-center">
+  <div><h4 class="text-sm font-semibold bg-gradient-to-r from-[#5635DD] to-[#E63573] bg-clip-text text-transparent ml-[3.938rem] mr-[3.875rem] mb-[1.188rem] leading-[160%] tracking-[15%] uppercase text-center">Have a project in mind?</h4></div>
+  <div><h1 class="font-['Poppins'] font-semibold text-4xl leading-[135%] tracking-normal text-center text-[#131313] mr-[1.625rem] ml-[1.438rem] mb-[2.75rem] md:text-[2.875rem] md:mx-[5.027rem]">Let’s Make Something Great Together!</h1></div>
+  <div class="bg-gradient-to-b from-[#6737D3] to-[#D73780] w-[8.938rem] h-[8.938rem] mb-[4.625rem] flex flex-col items-center justify-center rounded-full text-center border text-white">
+    <h2 class="text-[0.572rem] font-bold tracking-[0.18rem] leading-[140%]">CONTACT WITH US</h2>
+    <div>
+      <i class="ri-arrow-right-up-line text-xs"></i>
+    </div>
+</div>
+
+<div class="mb-[3rem] flex items-center justify-between  p-4 md:px-[10rem] w-full">
+  <img src="Images/Vector (3).png" class="max-w-[40px] md:max-w-[50px]" alt="facebook">
+  <img src="Images/Vector (4).png" class="max-w-[40px] md:max-w-[50px]" alt="LinkedIn">
+  <img src="Images/Group 11564.png" class="max-w-[40px] md:max-w-[50px]" alt="Instagram">
+  <img src="Images/Vector (2).png" class="max-w-[40px] md:max-w-[50px]" alt="Behance">
+  <img src="Images/Group.png" class="max-w-[40px] md:max-w-[50px]" alt="round">
+</div>
+  <div class="border-b-4 w-full border-[#BBBBBB] pb-[1.188rem] mb-[1.188rem] text-center"><h3 class="font-['Poppins'] text-sm font-medium tracking-normal leading-[100%]  text-[#ACACAC]">Privacy Policy   |   Terms and Conditions</h3>
+  </div>
+  <div class="mb-[2.313rem] text-center"><h3 class="font-['Poppins'] text-sm font-medium tracking-normal leading-[100%]  text-[#ACACAC]"><i class="ri-copyright-line"></i><span id="footer-year"></span> Ideapeel Inc. All Rights Reserved</h3>
+  </div>
+</section>
   <script src="script.js"></script>
 </body>
 </html>
