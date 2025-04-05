@@ -50,9 +50,4 @@ document.addEventListener("DOMContentLoaded", () =>{
     };
     updateCounter();
     });
-    });
-
-// Update footer year
-document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-
+});
